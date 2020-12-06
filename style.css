@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+:root{
+    --main:rgb(108, 99, 255);
+    --black:#686764;
+    --white:#fff;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;  
+}
+/* gloabal style */
+.heading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.blackline:before, .blackline:after{
+    content: "";
+    background-color:black ;
+    height:4px;
+    display:inline-block;
+    min-width: 100px;
+    margin: 0 0.5rem;
+    transform: translateY(-9px);
+}
+.btn{
+    border-radius: 0!important;
+    border:2px solid var(--main) !important;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    outline: none!important;
+    background-color:transparent;
+    transition: all 1s linear;
+    color: var(--black) !important;
+}
+.btn:hover{
+  color: var(--black);
+  background-color: var(--main)!important;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.fab a{
+    color: var(--white);
+}
+.fab a:hover{
+    color: var(--main);
+}
+
+/* navbar */
+.navbar-light .navbar-nav .nav-link,.navbar-brand{
+    color: var(--black)!important;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+.navbar{
+    background:var(--white);
+}
+.navbar-nav .nav-item:hover a{
+   color: var(--main)!important;
+}
+.navbar-toggler{
+    padding: 0!important;
+    border: 0!important;    
+}
+.navbar-nav{
+    display: flex!important;
+    justify-content:center!important;
+}
+.nav-link{
+    border-bottom: 2px solid transparent !important;
+}
+.nav-link:active,.nav-link:hover,.nav-link:focus{
+    border-color:var(--main) !important;
+}
+.navbar-toggler div{
+    width: 20px;
+    height: 2px;
+    margin: 5px;
+    background-color: var(--black);
+}
+.toggle .bar1{
+    transform: rotateZ(45deg) translate(1px,9px);
+}
+.toggle .bar2{
+    transform:scale(0);
+}
+.toggle .bar3{
+    transform: rotateZ(-45deg) translate(0px,-9px);
+}
+
+/* intro section */
+#intro{
+    background-color:#f8f8f8;
+    color:var(--black) ;
+    min-height: 100vh;
+}
+#intro .heading-title p{
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 3.3rem;
+    font-size: 4rem;
+}
+#intro a :hover{
+    transform: rotate(90deg);  
+}
+#intro .heading-title p{
+    color: #8d8d8d;
+    margin-top: 0px;
+    font-weight: normal;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+}
+
+/* about */
+#about{
+    min-height: 100vh;
+    padding: 4rem 0; 
+}
+#about p{
+    margin: 0 2rem;
+}
+#skills{
+    min-height: 100vh;
+    padding: 4rem 2rem; 
+}
+
+/* project */
+#project{
+    min-height: 100vh;
+    padding: 4rem 2rem;  
+}
+#project .card{
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+#project .card a img{
+    width:100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+}
+#project .img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+}
+#project .img-text h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#project .img-text h6{
+    font-size: 1rem;
+}
+#project .card:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+#project .card:hover .img-text
+{
+    opacity: 1;
+}
+
+/* contact */
+#contact{
+    min-height: 100vh;
+    padding: 4rem 2rem; 
+}
+#contact button{
+    margin-left: 175px;
+}
+.form-control{
+    outline:none!important;
+    border-radius: 0!important;
+}
+#contact p{
+    color: var(--main);
+    font-weight: bold;
+}
+/* footer */
+#footer{
+    min-height: 10vh;
+    padding: 2rem 1rem;
+    background-color: #393e46;
+    color:var(--white);
+}
+#footer .fa:hover{
+    color: var(--main);
+}
+#footer .git-link{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+@media only screen and (max-width: 990px) {
+    .nav-link{
+        display: block;
+        margin: 0!important;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        margin: 0!important;
+    }
+    .navbar-collapse{
+       margin-left: 0!important;
+    }
+   .collapsing,.show{
+        border-top: 2px solid var(--main)!important;
+    }
+   #about p{
+      padding: 0;
+      margin: 0 2rem 0 0;
+      text-align: justify;
+    }
+   #about .col-md-6{
+       padding: 0!important;
+    }
+   .heading-title{
+        margin-top: 2rem;
+    }
+    .container{
+        padding: 2rem!important;
+    }
+    #project .container,#footer .container{
+        padding: 0!important;  
+    }
+    #contact button{
+        margin-left: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .navbar{
+        padding-left: 0!important;  
+        padding-right: 0!important;  
+    }
+    .collapsing,.show{
+        border-top: 2px solid var(--main)!important;
+    }
+    .navbar-toggler{
+        margin-right: 3rem!important;
+    }
+    .navbar-collapse{
+        margin-left: 0!important;
+    }
+    .nav-link{
+        display: block;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        margin: 0!important;
+    }
+    .navbar .nav-link{
+        margin: 0!important;
+    }
+    #about p{
+        margin: 0 0 2rem 0;
+    }
+    .container{
+        padding: 2rem!important;
+    }
+    #skills .container{
+        padding: 1!important;
+    }
+    #skills,#project,#contact{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #skills .card{
+        margin-right: 0!important;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #project .container .card{
+        padding: 0!important;
+        margin-left:2rem!important;
+        margin-right: 2rem!important;
+    }
+    #contact button{
+        margin-left: 0px;
+    }
+    #contact form{
+        padding: 0!important;
+    }
+    .footer-div{
+        justify-content: unset!important;
+        padding: 1rem;
+    }
+    #footer{
+        padding: 0 0 0 1.5rem!important;
+    }
+    .footer-div .contact-detail,.center-info,.social{
+        margin: 1rem!important;
+    }   
+    .fab{
+        padding-top: 1rem;
+    }  
+  }
+

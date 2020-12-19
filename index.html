@@ -1,83 +1,119 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="icon.png">
-        <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5 shadow-sm text-uppercase  col-sm-12 cl-lg-12 px-0 fixed-top" id="navbar-section">
-        <a class="navbar-brand pl-5" href="#">Portfolio</a>
-        <div class="navbar-toggler mr-5" data-toggle="collapse" data-target="#navbaraid">
+<!-- gsap animation -->
+    <section id="start" class="d-flex align-items-center justify-content-center">
+        <div class="start-text">
+          <div class="hide">
+            <span class="text">Introducing <br>my self</span>
+          </div>
+        </div>
+    </section>
+<!-- end gsapanimation -->
+<!-- navbar -->
+    <nav class="navigation">
+        <div class="logo text-uppercase">Portfolio</div>
+        <ul class="navbar-links">
+            <li>
+                <a href="#intro" class="navbar-link">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="navbar-link">About</a>
+            </li>
+            <li>
+                <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+            <li>
+                <a href="#project" class="navbar-link m-0">project</a>
+            </li>
+            <li>
+                <a href="#contact" class="navbar-link m-0">Contact</a>
+            </li>
+        </ul>
+        <div class="burgar">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <div class="collapse navbar-collapse ml-5 down" id="navbaraid">
-
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#intro">Home</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#project">My Work</a>
-                </li>
-                <li class="nav-item mr-5 nav-last">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
     </nav>
-   <!-- intro -->
+<!-- scoial icon -->
+    <div class="social">
+        <div class="icon">
+            <i class="fa fa-facebook-f"></i>
+        </div>
+        <div class="icon">
+            <i class="fa fa-twitter"></i>
+        </div>
+        <div class="icon">
+            <a href="https://github.com/AnjaliPatel1033" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/anjali-patel-b970b2171/" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+<!-- end social icon -->
+<!-- end navbar -->
+<!-- intro -->
     <section id="intro" class="d-flex justify-content-center align-items-center ">
-     <div class="container d-flex justify-content-center align-items-center px-5 pt-5 flex-wrap p-0">
+        <div class="container d-flex justify-content-center align-items-center px-5 pt-5 flex-wrap p-0">
             <div class="heading-title">
                 <h1>Hi,</h1>
                 <h1> I'm Anjali Patel,</h1>
                 <h1>Web developer.</h1>
                 <p>-Front End developer</p>
-                <a href="#about" class="btn btn-info">View My Work<i class=" ml-3 fa fa-arrow-right"></i></a>
+                <a href="#about" class="btn">View My Work<i class=" ml-3 fa fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
- <!-- about -->
+<!-- end intro -->
+<!-- about -->
     <section id="about">
-        <div class="title text-center py-4">
+        <div class="title text-center py-4" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
             <h2 class="heading">About Me</h2>
             <h3 class="blackline"><i class="fa fa-star"></i></h3>
         </div>
         <div class="container pt-4 px-5 col-md-12  d-flex justify-content-center align-items-center flex-wrap ">
-            <div class="col-md-5 py-2  ">
-                <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit unde beatae praesentium fugit
-                    repudiandae tempore enim debitis veritatis nostrum, eligendi laborum reprehenderit harum eius,
-                    aliquid voluptas eos. Nostrum recusandae, tenetur, ratione deleniti veritatis dolore reiciendis odit
-                    suscipit libero vero quos qui nam. Repellendus maiores tempora harum? Amet laborum voluptate
-                    voluptatibus!</p>
+            <div class="col-md-5 py-2" data-aos="fade-up" data-aos-duration="1000">
+                <p class="m-0">I am a fresher. I want to build my career in the IT department. I am looking for a job as
+                    a frontend developer. I started learning frontend development by myself from various online
+                    platforms. I am able to work in the following technology which is mentioned in the <a
+                        href="#skills">skills</a> section. I also developed some small projects for practice purposes
+                    you can see in my <a href="#project">my work</a> section.
+                </p>
             </div>
             <div class="col-md-5 p-2  about-image_container">
                 <img src="images/about.svg" alt="" class="img-fluid">
             </div>
         </div>
     </section>
+<!-- end about -->
 <!-- skill -->
     <section id="skills" class="bg-light">
-        <div class="title text-center py-4">
+        <div class="title text-center py-4" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
             <h2 class="heading">Skills</h2>
             <h3 class="blackline"><i class="fa fa-star"></i></h3>
         </div>
-        <div class="container px-5 pt-4 d-flex justify-content-around flex-wrap">
-            <div class="card shadow p-3 mr-2 mb-4  bg-white rounded" style="width: 18rem;">
+        <div class="container px-5 pt-4 d-flex justify-content-around flex-wrap" data-aos="zoom-in-up"
+            data-aos-duration="2000" data-aos-easing="linear">
+            <div class="card shadow p-3 mr-2 mb-5  bg-white rounded" style="width: 18rem;">
                 <div class="card-body">
                     <div class="img-container d-flex justify-content-center align-items-center">
                         <img src="images/development.svg" class="img-fluid card-img-top"
@@ -87,7 +123,7 @@
                     <p class="card-text text-center">Able to create beautiful site using HTML CSS JAVASCRIPT</p>
                 </div>
             </div>
-            <div class="card shadow mr-2 mb-4 p-3  bg-white rounded" style="width: 18rem;">
+            <div class="card shadow mr-2 mb-5 p-3  bg-white rounded" style="width: 18rem;">
                 <div class="card-body">
                     <div class="img-container d-flex justify-content-center align-items-center">
                         <img src="images/responsive.svg" style="width: 100px;height: 100px ;" alt="">
@@ -96,7 +132,25 @@
                     <p class="card-text text-center">Able to create responsive site at a profffisonal level.</p>
                 </div>
             </div>
-            <div class="card shadow mr-2 p-3 mb-4 bg-white rounded" style="width: 18rem;">
+            <div class="card shadow mr-2 p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="images/undraw_tailwind_css_1egw.svg" style="width: 100px;height: 100px;" alt="">
+                    </div>
+                    <h6 class="card-subtitle mt-3 mb-2 text-muted text-center text-capitalize">CSS Framework</h6>
+                    <p class="card-text text-center">Able to design webpage using bootstrap 3 bootstrap 4.</p>
+                </div>
+            </div>
+            <div class="card shadow mr-2 p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="images/animating.svg" style="width: 100px;height: 100px;" alt="">
+                    </div>
+                    <h6 class="card-subtitle mt-3 mb-2 text-muted text-center text-capitalize">Animation</h6>
+                    <p class="card-text text-center">Able to animate using GSAP and AOS.</p>
+                </div>
+            </div>
+            <div class="card shadow mr-2 p-3 mb-5 bg-white rounded" style="width: 18rem;">
                 <div class="card-body">
                     <div class="img-container d-flex justify-content-center align-items-center">
                         <img src="images/idea.svg" style="width: 100px;height: 100px;" alt="">
@@ -105,18 +159,31 @@
                     <p class="card-text text-center">Able to communicate idea in brief ways.</p>
                 </div>
             </div>
+            <div class="card shadow mr-2 p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="images/IDE.svg" style="width: 100px;height: 100px;" alt="">
+                    </div>
+                    <h6 class="card-subtitle mt-3 mb-2 text-muted text-center text-capitalize">IDE</h6>
+                    <p class="card-text text-center">Able to work on visual studio,sublime text and webstorm IDE.</p>
+                </div>
+            </div>
         </div>
     </section>
+<!-- end skill -->
 <!-- project -->
     <section id="project" class="bg-white">
-        <div class="title text-center py-4">
+        <div class="title text-center py-4" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
             <h2 class="heading">My Work</h2>
             <h3 class="blackline"><i class="fa fa-star"></i></h3>
         </div>
-        <div class="container px-5 pt-4 d-flex justify-content-center flex-wrap">
+        <div class="container px-5 pt-4 d-flex justify-content-center flex-wrap" data-aos="zoom-in-up"
+            data-aos-duration="2000" data-aos-easing="linear">
             <div class="card  mr-5" style="width: 20rem;">
                 <a href="https://anjalipatel1033.github.io/FirstProject/#header" target="_blank">
-                    <img class="card-img-top img-fluid" src="images/project/restro.png" style="height: 250px;" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/project/restro.png" style="height: 250px;"
+                        alt="Card image cap">
                     <div class="img-text">
                         <h1>View site<i class="fa fa-window-maximize ml-2"></i></h1>
                         <h6>Desgin , web development</h6>
@@ -125,7 +192,8 @@
             </div>
             <div class="card  mr-5" style="width: 20rem;">
                 <a href="https://anjalipatel1033.github.io/Photoshop/" target="_blank">
-                    <img class="card-img-top img-fluid" src="images/project/photoshop.png" style="height: 250px;" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/project/photoshop.png" style="height: 250px;"
+                        alt="Card image cap">
                     <div class="img-text">
                         <h1>View site<i class="fa fa-window-maximize ml-2"></i></h1>
                         <h6>Desgin , web development</h6>
@@ -134,7 +202,8 @@
             </div>
             <div class="card  mr-5" style="width: 20rem;">
                 <a href="https://anjalipatel1033.github.io/BootstrapProject/" target="_blank">
-                    <img class="card-img-top img-fluid" src="images/project/bootstrap4.png" style="height: 250px;" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/project/bootstrap4.png" style="height: 250px;"
+                        alt="Card image cap">
                     <div class="img-text">
                         <h1>View site<i class="fa fa-window-maximize ml-2"></i></h1>
                         <h6>Desgin , web development</h6>
@@ -143,7 +212,8 @@
             </div>
             <div class="card  mr-5" style="width: 20rem;">
                 <a href="https://anjalipatel1033.github.io/CSSGrid/" target="_blank">
-                    <img class="card-img-top img-fluid" src="images/project/grid.png" style="height: 250px;" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/project/grid.png" style="height: 250px;"
+                        alt="Card image cap">
                     <div class="img-text">
                         <h1>View site<i class="fa fa-window-maximize ml-2"></i></h1>
                         <h6>Desgin , web development</h6>
@@ -152,89 +222,77 @@
             </div>
         </div>
     </section>
-    <!-- contact -->
-    <section id="contact" class="bg-light">
-        <div class="title text-center py-4">
-            <h2 class="heading">Get In Touch</h2>
-            <h3 class="blackline"><i class="fa fa-star"></i></h3>
-        </div>
-        <p class="text-center pb-5">Have a question or want to work together?</p>
-        <div class="container  ">
-            <form action="#">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <input  type="text" name="name" class="form-control" placeholder="Name">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <input  type="text" class="form-control" placeholder="Email Id">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <input  type="text" name="email" class="form-control" placeholder="Subject">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <textarea  name="message" class="form-control" placeholder="Message" rows="4"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-10">
-                      <input type="submit" class="btn btn-info btn-send" value="Send">
-                    </div>
-                  </div>  
-            </form>
-        </div>
-
-    </section>
+<!-- end skills -->
 <!-- footer -->
-    <footer id="footer" class="px-5">
-        <div class="fab d-flex justify-content-around text-center">
-            <a href="#intro"><i class="fa fa-chevron-up"></i></a>
+    <section class="contact" id="contact">
+        <div class="title text-center py-4" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <h2 class="heading">Get In Touch</h2>
+            <h3 class="whiteline"><i class="fa fa-star"></i></h3>
         </div>
-        <div class="footer-div d-flex justify-content-around flex-wrap">
-           <div class="contact-detail d-flex flex-column my-3">
-               <div class="address my-2">
-                <i class="fa fa-address-card pr-2"></i>123,abc bghs,bxjs,india.
-               </div>
-               <div class="phone my-2">
-                <i class="fa fa-phone pr-2"></i>+123 456 789
-               </div>
-           </div>
-           <div class="center-info my-3">
-            <div class="emailId my-2">
-                <i class="fa fa-envelope pr-2"></i>abc@example.com
+        <p class="text-center pb-4">Have a question or want to hire me?</p>
+
+        <div class="contact-detail  row col-lg-12 py-5 m-0" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1500">
+            <div class="col-lg-4 col-sm-12">
+                <div class="contact-box text-center">
+                    <div class="contact-icon">
+                        <i class="fa fa-address-card pr-2"></i>
+                    </div>
+                    <p>
+                        Surat,Gujarat
+                    </p>
+                </div>
             </div>
-            <div class="emailId my-2">
-                <i class="fa fa-github pr-2"></i><a href="https://github.com/AnjaliPatel1033" target="_blank" class="git-link">github</a>
+            <div class="col-lg-4  col-sm-12">
+                <div class="contact-box text-center">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <p>
+                        anjalipatel1033@gmail.com
+                    </p>
+                </div>
             </div>
-           </div>
-            <div class="social d-flex justify-content-around align-items-center flex-wrap my-3">
-                <div class="icon mx-2">
+            <div class="col-lg-4  col-sm-12">
+                <div class="contact-box text-center">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <p>
+                        +91 9725060616
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="social-footer d-flex justify-content-center py-3">
+                <div class="icon">
                     <i class="fa fa-facebook-f"></i>
                 </div>
-                <div class="icon mx-2">
+                <div class="icon">
                     <i class="fa fa-twitter"></i>
                 </div>
-                <div class="icon mx-2">
-                    <i class="fa fa-instagram"></i>
+                <div class="icon">
+                    <a href="https://github.com/AnjaliPatel1033" target="_blank" class="git-link"><i
+                            class="fa fa-github"></i></a></i>
                 </div>
-                <div class="icon mx-2">
-                    <i class="fa fa-linkedin"></i>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/anjali-patel-b970b2171/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
                 </div>
             </div>
+            <p class="text-center m-0">Copyright ©2020 All rights reserved | This template is made by <a
+                    href="#">Anjali patel</a></p>
         </div>
-    </footer>
-
-   
-    
+    </section>
+<!-- end footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
